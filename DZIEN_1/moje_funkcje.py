@@ -25,3 +25,19 @@ print(nbparz)
 
 cube = list(map(lambda x:x**3,num))
 print(cube)
+
+kwadraty = [i**2 for i in range(5,5000,5)]
+print(kwadraty)
+
+#przykład 4
+
+import funkcje.bfunkcje as bf
+def witaj(imie):
+    return f'Miło Cię widzieć {imie}'
+
+def osoba(funkcja,*args):
+    return funkcja(*args)
+
+print(osoba(witaj,"Olaf"))
+print(osoba(bf.konkurs,"Ola",66,13))
+print(osoba(bf.bonus,66,10))
